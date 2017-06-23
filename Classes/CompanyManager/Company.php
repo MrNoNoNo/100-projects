@@ -28,8 +28,21 @@ class Company
         print_r($employee);
     }
 
-    public function raise(){
-        //TODO
+    public function raise(array $employee){
+        foreach($employee as $emp) {
+
+        }
+    }
+
+    public function listAllEmployees(){
+        foreach($this->employees as $emp) {
+            echo "Employee : " . $emp->name . "\n";
+            echo "Hour Income : " . $emp->hourIncome  . "\n";
+            echo "Working Days : " . $emp->workingDays . "\n";
+            echo "Worked hours : " . $emp->workingDays * $emp->workedHours . "\n";
+            echo $emp->calculateSalary() . "\n";
+            echo "<br />";
+        }
     }
 
 }

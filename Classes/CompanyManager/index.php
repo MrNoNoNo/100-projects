@@ -17,7 +17,7 @@ $employee4 = new Executive('George');
 
 echo "<pre>";
 print $employee1->calculateSalary();
-echo "\n";
+echo "\n" . $employee1->level;
 print $employee2->calculateSalary();
 echo "\n";
 print $employee3->calculateSalary();
@@ -30,3 +30,5 @@ $mainCompany->hire([$employee3]);
 $mainCompany->hire([$employee4]);
 
 $mainCompany->fire([$employee3]);
+
+$mainCompany->listAllEmployees();

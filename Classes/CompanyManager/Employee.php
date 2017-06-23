@@ -6,6 +6,7 @@ abstract class Employee {
     public $hourIncome;
     public $workedHours;
     public $workingDays;
+    public $level = 1;
 
     public function __construct($name){
         $this->name = $name;
@@ -36,6 +37,8 @@ class HourlyEmployee extends Employee {
 
 class SalariedEmployee extends Employee {
 
+    public $level = 2;
+
     public function calculateSalary()
     {
         $this->hourIncome = 7.35;
@@ -47,6 +50,8 @@ class SalariedEmployee extends Employee {
 
 class Manager extends Employee {
 
+    public $level = 3;
+
     public function calculateSalary()
     {
         $this->hourIncome = 15.7;
@@ -57,6 +62,8 @@ class Manager extends Employee {
 }
 
 class Executive extends Employee {
+
+    public $level = 4;
 
     public function calculateSalary()
     {
