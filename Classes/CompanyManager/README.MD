@@ -1,3 +1,3 @@
-Solutions for Mega Projects list
+Company Manager
 
 https://github.com/karan/Projects
