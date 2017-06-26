@@ -1,21 +1,6 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: Octavian
- * Date: 26-Jun-17
- * Time: 11:14 PM
- */
 $start = microtime(true);
-//function is_url()
-//{
-//    $response = [];
-//    $url = $_GET['url'];
-//    if (!empty($url)) {
-//        $response = get_headers($url);
-//    }
-//    return $response;
-//}
 
 class Url
 {
